@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gradient color generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<link rel="stylesheet" href="C:\Users\hp\Desktop\Projekti ne Web\style_bg - Copy (2).css">
+
+<nav>
+
+    <ul>
+       
+        <ul class="nav">
+          
+          <li class="nav-item"><a href="Home.html">Home</a></li>
+            <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a href="backgroundgenerator.html">Choose your background</a></li>
+         
+     
+       
+            
+      
+      </ul>
+
+      
+       </nav>
+
+       <br>
+       <br>
+
+
+
+
+       <p style="font-family:'Courier New'">Welcom to our Background generator, gradient color generator
+        <br>
+        You can use our WEB-site to get a free background coloring</p>
+        <br>
+        <header>
+          <center> <h3 class="title">Login to continue</h3> </center>
+          <br>
+          <p style="font-family:'Courier New'">Don't have an account yet!!Register now</p>
+        </header>
+      
+       
+       
+      <!-- container div -->
+      <div class="container">
+    
+          <!-- upper button section to select
+               the login or signup form -->
+          <div class="slider"></div>
+          <div class="btn">
+              <button class="login">Login</button>
+              <button class="signup">Signup</button>
+          </div>
+    
+          <!-- Form section that contains the
+               login and the signup form -->
+          <div class="form-section">
+    
+              <!-- login form -->
+              <div class="login-box">
+                  <input type="email" 
+                         class="email ele" 
+                         placeholder="youremail@email.com">
+                  <input type="password"
+                         class="password ele" 
+                         placeholder="password">
+                  <button class="clkbtn">Login</button>
+              </div>
+    
+              <!-- signup form -->
+              <div class="signup-box">
+                  <input type="text" 
+                         class="name ele" 
+                         placeholder="Enter your name">
+                  <input type="email" 
+                         class="email ele" 
+                         placeholder="youremail@email.com">
+                  <input type="password" 
+                         class="password ele" 
+                         placeholder="password">
+                  <input type="password" 
+                         class="password ele" 
+                         placeholder="Confirm password">
+                  <button class="clkbtn">Signup</button>
+              </div>
+          
+      </div>
+
+     <script>
+ let signup = document.querySelector(".signup");
+let login = document.querySelector(".login");
+let slider = document.querySelector(".slider");
+let formSection = document.querySelector(".form-section");
+
+signup.addEventListener("click", () => {
+	slider.classList.add("moveslider");
+	formSection.classList.add("form-section-move");
+});
+
+login.addEventListener("click", () => {
+	slider.classList.remove("moveslider");
+	formSection.classList.remove("form-section-move");
+});
+
+      </script>
+      </body>
+ 
+    
+  </html>

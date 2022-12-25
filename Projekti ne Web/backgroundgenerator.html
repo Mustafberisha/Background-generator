@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gradient color generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<link rel="stylesheet" href="C:\Users\hp\Desktop\Projekti ne Web\style_bg - Copy (2).css">
+
+<nav>
+
+    <ul>
+        <ul class="nav">
+         
+            <li class="nav-item"><a href="Home.html">Home</a></li>
+            <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a href="backgroundgenerator.html">Choose your background</a></li>
+         
+    
+
+        </ul>
+        
+      
+          
+</nav>
+<br>
+<br>
+<br>
+
+<body class="change">
+	<h1>Background generator</h1>
+    <br>
+	<h3>Gradient color generator</h3>
+
+	<b>Current Colors for Gradient Background:</b>
+    <br>
+    <b>Just copy the CSS code and thats it</b>
+
+	<!-- Default color for gradient -->
+	<input class="color1" type="color" value="#0000
+    
+
+    ff" />
+	<input class="color2" type="color" value="#add8e6" />
+
+
+    <script>
+        var css = document.querySelector("h3");
+        var color1 = document.querySelector(".color1");
+        var color2 = document.querySelector(".color2");
+        var body = document.querySelector(".change");
+        
+        // Changing color for the gradient
+        function changeGradient() {
+            body.style.background =
+                "linear-gradient(to right, "
+                    + color1.value + ", "
+                    + color2.value + ")";
+    
+            css.textContent = body.style.background + ";";
+        }
+    
+        color1.addEventListener("input", changeGradient);
+    
+        color2.addEventListener("input", changeGradient);
+    </script>
+
+
